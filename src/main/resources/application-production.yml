@@ -1,0 +1,17 @@
+message: "Hello, from App Engine!"
+
+spring:
+  datasource:
+    driver_class_name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://35.226.134.72:1433;database=walmart
+    username: sqlserver
+    password: 5610915
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+        format_sql: true
